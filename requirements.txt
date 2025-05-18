@@ -1,0 +1,17 @@
+# Embedding + vector search
+chromadb==0.4.24
+sentence-transformers==2.2.2
+torch>=1.13.1
+
+# LLM-based QA
+transformers>=4.38.2
+accelerate>=0.26.1
+
+# UI
+gradio>=4.29.0
+
+# Networking
+requests>=2.31.0
+
+# Dependency fix
+pydantic>=2.0.0
