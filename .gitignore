@@ -1,2 +1,25 @@
-"chroma_store/chroma.sqlite3" 
-"chroma_store/chroma.sqlite3" 
+# .gitignore — prevent committing large or sensitive files
+
+# Local vector database and runtime artifacts
+chroma_store/
+images/
+
+# Environment configs and tokens
+.env
+
+# Embedded data files
+*.jsonl
+*.json
+*.sqlite3
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+__pycache__/
+*.py[cod]
