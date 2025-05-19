@@ -1,17 +1,30 @@
-# Embedding + vector search
+# 🧠 Embedding + Vector Search
 chromadb==0.4.24
-sentence-transformers==2.2.2
+sentence-transformers==2.4.0
 torch>=1.13.1
 
-# LLM-based QA
-transformers>=4.38.2
+# 🤖 LLM-Based QA
+transformers==4.37.2
 accelerate>=0.26.1
+huggingface-hub==0.30.1
 
-# UI
+# 📄 PDF Processing
+pymupdf>=1.25.5  # Used for extracting text from PDFs
+pdfminer.six>=20221105  # Alternative PDF text extraction
+
+# 🖼️ OCR + Image Processing
+pytesseract>=0.3.10  # OCR engine (ensure Tesseract is installed)
+Pillow>=9.4.0  # Image processing for OCR support
+
+# 🌐 UI (Interactive Querying)
 gradio>=4.29.0
 
-# Networking
+# 🔗 Networking (API Calls)
 requests>=2.31.0
 
-# Dependency fix
+# ⚙️ Web Scraping & Parsing
+beautifulsoup4>=4.12.2  # HTML parsing for structured text extraction
+
+# ⚙️ Dependency Fix
 pydantic>=2.0.0
+numpy==1.26.4  # Explicitly setting the numpy version
